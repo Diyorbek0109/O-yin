@@ -46,6 +46,9 @@ body {
 
   padding: 0;
 }
+.name {
+  font-size: 25px;
+}
 
 .coin2 {
   top: 35px;
