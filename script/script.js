@@ -1,10 +1,7 @@
 console.log("yes i working");
 let container = document.querySelector(".navbar");
-let nastroyka = document.getElementById("nastroyka");
+let nastroyka = document.getElementById("main_parametr");
 
 function parametr() {
-  //   alert("salom");
-  nastroyka.style.display = "flex";
   container.style.filter = "blur(1px)";
-  nastroyka.style.filter = "none";
 }

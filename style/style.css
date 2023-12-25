@@ -11,7 +11,8 @@ body {
   align-items: start;
 }
 .container {
-  width: 480px;
+  position: relative;
+  width: 450px;
   height: 800px;
   /* border-radius: 20px; */
   border: 1px solid black;
@@ -45,16 +46,42 @@ body {
 
   padding: 0;
 }
-.coin {
+
+.coin2 {
+  top: 35px;
+  /* right: 100px; */
+  transform: rotateZ(2px);
+  /* border: 1px solid red; */
+  /* display: none;/ */
   width: 30px;
   height: 30px;
   margin: 20px;
+  /* transform: rotateY(80deg); */
+  animation: tanga1 5s ease-in-out infinite;
 }
-.nastroyka {
+@keyframes tanga1 {
+  0% {
+    width: 30px;
+    height: 30px;
+    right: 100px;
+  }
+  50% {
+    transform: rotateY(360deg);
+    right: 97px !important;
+  }
+
+  100% {
+    width: 30px;
+    height: 30px;
+    right: 100px;
+  }
+}
+
+.main_parametr {
   width: 200px;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
